@@ -98,5 +98,14 @@ font-size: 16px;
         height: 40px;
         background-color: rgb(245, 247, 150);
     }
+        button {
+        width: 100%;
+        height: 40px;
+        background-color: rgb(56, 63, 54);
+        color: white;
+        font-size: 16px;
+        
+        }
+        
     
     }
