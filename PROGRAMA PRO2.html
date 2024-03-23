@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="script2.js" ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Akaya+Kanadaka&family=Madimi+One&family=Noto+Music&family=Road+Rage&display=swap" rel="stylesheet">
+
+
+    <title>Object organizer</title>
+</head>
+<body>
+    
+    <h1> TABLA DE UND/HR DEPENDIENDO DE LA REFERENCIA </h1>
+
+
+    <p class="p">1. Seleccione la referencia que desea fabricar en cada columna.</p>
+
+    <!-- Tabla para selección de referencias-->
+        <table>
+            <tr>
+                <th >PROCESO</th>
+                <th >
+                    <select name="" id="refcol1" onchange="logObjectProperties1()">
+                        <option value="Ref0">n/a</option>
+                        <option value="Ref1">Ref1</option>
+                        <option value="Ref2">Ref2</option>
+                        <option value="Ref3">Ref3</option>
+                    </select>
+                </th>
+                <th >
+                    <select name="" id="refcol2" onchange="logObjectProperties2()">
+                        <option value="Ref0">n/a</option>
+                        <option value="Ref1">Ref1</option>
+                        <option value="Ref2">Ref2</option>
+                        <option value="Ref3">Ref3</option>
+                    </select>
+                </th>
+                <th>
+                    <select name="" id="refcol3" onchange="logObjectProperties3()">
+                        <option value="Ref0">n/a</option>
+                        <option value="Ref1">Ref1</option>
+                        <option value="Ref2">Ref2</option>
+                        <option value="Ref3">Ref3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>ADH (und/hr)</td> 
+                <td id="adhc1"></td>
+                <td id="adhc2"></td>
+                <td id="adhc3"></td>
+            </tr>
+
+            <tr>
+                <td>CR (und/hr)</td>
+                <td id="crc1"></td>
+                <td id="crc2"></td>
+                <td id="crc3"></td>
+            </tr>
+            
+            <tr>
+                <td>TR (und/hr) </td>
+                <td id="trc1"></td>
+                <td id="trc2"></td>
+                <td id="trc3"></td>
+            </tr>
+            <tr>
+                <td>EMP (und/hr)</td>
+                <td id="empc1"></td>
+                <td id="empc2"></td>
+                <td id="empc3"></td>
+            </tr>
+       
+        </table>
+
+
+
+        <p class="p">2. Indique la cantidad que requiere fabricar de cada una de las 3 referencias en los espacios con fondo amarillo. Ya puede calcular!</p>
+        <!-- Tabla para calculo de horas-->
+        <table>
+
+            <tr>
+                <td>REFERENCIA >>></td> 
+                <td id="refc1"></td>
+                <td id="refc2"></td>
+                <td id="refc3"></td>
+                <td id="calcule" onclick="calcule()"><button>CALCULE</button></td>
+            </tr>
+
+            <tr>
+                <th >CANTIDAD SOLICITADA >>>></th>
+
+                <th >
+                  <input type="number" name="q" id="qc1">
+                </th>
+               
+                <th >
+                   <input type="number" name="q" id="qc2">
+                </th>
+                
+                <th >
+                        <input type="number" name="q" id="qc3">
+                </th>
+                
+                <th > Tiempo Total</th>
+
+
+            <tr>
+                <td>ADH (hr)</td> 
+                <td id="radhc1"></td>
+                <td id="radhc2"></td>
+                <td id="radhc3"></td>
+                <th id="radhc4"></th>
+            </tr>
+
+            <tr>
+                <td>CR (hr)</td>
+                <td id="rcrc1"></td>
+                <td id="rcrc2"></td>
+                <td id="rcrc3"></td>
+                <th id="rcrc4"></th>
+            </tr>
+            
+            <tr>
+                <td>TR (hr) </td>
+                <td id="rtrc1"></td>
+                <td id="rtrc2"></td>
+                <td id="rtrc3"></td>
+                <th id="rtrc4"></th>
+            </tr>
+            <tr>
+                <td>EMP (hr)</td>
+                <td id="rempc1"></td>
+                <td id="rempc2"></td>
+                <td id="rempc3"></td>
+                <th id="rempc4"></th>
+            </tr>
+
+            <tr>
+                <th>Total (hr)</th>
+                <th id="rtc1"></th>
+                <th id="rtc2"></th>
+                <th id="rtc3"></th>
+                <th id="rtc4"></th>
+            </tr>    
+       
+        </table>
+
+<p>@raalossa. All rights reserved 2024 (&copy;) </p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
